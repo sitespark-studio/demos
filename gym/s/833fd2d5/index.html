@@ -136,6 +136,23 @@
     .L-right .ph-hero { right:auto; left:6vw; transform:translateY(-46%) rotate(-2.5deg); }
     .L-left .ph-hero, .L-zigzag .ph-hero { right:6vw; }
   }
+  /* tighter sections (hero stays full screen) */
+  section:not(#home) { min-height:0; justify-content:flex-start; padding-top:70px; padding-bottom:36px; }
+  @media(max-width:860px){ section:not(#home){ padding-top:56px; padding-bottom:28px; } }
+  /* photo slots: gentle life */
+  @keyframes phFloat { 0%,100%{ translate:0 0; } 50%{ translate:0 -12px; } }
+  @keyframes phSway { 0%,100%{ translate:0 0; rotate:0deg; } 50%{ translate:0 -8px; rotate:1.6deg; } }
+  @keyframes phZoom { from{ scale:1; } to{ scale:1.09; } }
+  @keyframes phShine { 0%,55%{ transform:translateX(-130%) skewX(-18deg); } 100%{ transform:translateX(230%) skewX(-18deg); } }
+  .ph::after { content:""; position:absolute; top:0; bottom:0; left:0; width:40%; background:linear-gradient(90deg,transparent,#ffffff2e,transparent); transform:translateX(-130%) skewX(-18deg); animation:phShine 6s ease-in-out infinite; pointer-events:none; }
+  .ph img { animation:phZoom 9s ease-in-out infinite alternate; }
+  .ph-hero { animation:phFloat 5.5s ease-in-out infinite; }
+  .ph-pol { animation:phSway 6.5s ease-in-out infinite; }
+  .ph-trainer, .ph-front { animation:phFloat 7s ease-in-out infinite; }
+  .ph-trainer { animation-delay:-2s; }
+  .ph.empty i { display:inline-block; animation:phFloat 3.2s ease-in-out infinite; }
+  .ph { transition:box-shadow .3s, scale .3s; } .ph:hover { scale:1.025; box-shadow:0 20px 60px var(--glow); }
+  @media(prefers-reduced-motion:reduce){ .ph, .ph img, .ph::after, .ph-pol, .ph.empty i { animation:none!important; } }
 </style>
 </head>
 <body class="L-zigzag t-01">
@@ -940,6 +957,6 @@ function startScene(CFG){
 
 startScene({"style": "metal", "tools": ["dumbbell", "benchPress", "kettlebell", "treadmill"], "fx": ["rings", "sparks"], "colors": {"a": "#ff2d3d", "aEm": "#550008", "b": "#9a9aa5", "c": "#15151b", "key": "#ff2d3d", "rim": "#3a6bff"}, "fxColor": "#ff5560", "fog": "#07070a", "fogD": 0.04, "lights": {"amb": 0.4, "key": 90, "rim": 70, "dir": 1.1}, "spin": 0.008, "sides": [1, -1, 1, -1]});
 </script>
-<!--v:6f94855f-->
+<!--v:266cf426-->
 </body>
 </html>
