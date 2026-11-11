@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Fitness Xpress (The Unisex Gym) | Gym in Gorakhpur | Best Gym in Gorakhpur | fitness center | GYM | FXG |</title>
+<title>Fitness Xpress (The Unisex Gym)</title>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -170,6 +170,7 @@
   #lb .x { position:absolute; top:14px; right:16px; z-index:2; width:46px; height:46px; border-radius:50%; border:0; background:#ffffff26; color:#fff; font-size:30px; line-height:1; cursor:pointer; }
   #lb .hint { position:absolute; bottom:18px; left:0; right:0; text-align:center; color:#ffffffa0; font-size:12px; letter-spacing:.1em; pointer-events:none; }
   /* ---- laptop: fixed right column for the 3D tool, content on the left, nothing right-aligned ---- */
+  :root { --tc:0px; }
   @media(min-width:1100px){
     :root { --tc:24vw; }
     section { padding-right:calc(6vw + var(--tc)); }
@@ -192,7 +193,7 @@
 
   /* =====================  LAYOUT VARIANTS (Gold Luxe stays "classic" = no extra rules)  ===================== */
   /* hero photo on the LEFT, text to its right (used by sunset, ice, synthwave) */
-  @media(min-width:1100px){
+  @media(min-width:861px){
     .V-pill .ph-hero, .V-glass .ph-hero, .V-center2 .ph-hero { right:auto; left:6vw; transform:translateY(-46%) rotate(-2.5deg); }
     .V-pill #home:has(.ph-hero) > :not(.ph-hero), .V-glass #home:has(.ph-hero) > :not(.ph-hero), .V-center2 #home:has(.ph-hero) > :not(.ph-hero) { margin-left:calc(min(24vw,350px) + 5vw) !important; max-width:min(52%,620px); }
   }
@@ -205,10 +206,10 @@
   .V-index .grid .card, .V-index .prog .card, .V-index .fac .card { border-radius:0; border:0; border-left:5px solid var(--accent); width:100% !important; display:grid; grid-template-columns:54px 1fr; column-gap:16px; align-items:center; padding:16px 20px; }
   .V-index .card .ic, .V-index .steps .card::before { grid-row:span 2; margin:0; }
   .V-index .grid, .V-index .prog, .V-index .fac { display:grid; grid-template-columns:1fr; gap:10px; max-width:820px; }
-  @media(min-width:1100px){ .V-index .grid:not(.steps), .V-index .prog, .V-index .fac { grid-template-columns:1fr 1fr; max-width:none; } }
+  @media(min-width:861px){ .V-index .grid:not(.steps), .V-index .prog, .V-index .fac { grid-template-columns:1fr 1fr; max-width:none; } }
 
   /* ---- 02 Neon Cyber : CENTER (everything centred) ---- */
-  @media(min-width:1100px){
+  @media(min-width:861px){
     .V-center section:not(#home) { align-items:center !important; text-align:center !important; }
     .V-center section:not(#home) > .tag { align-self:center !important; }
     .V-center section:not(#home) .lead, .V-center .grid, .V-center .faq, .V-center .calc, .V-center .moretext, .V-center .agrid { margin-left:auto !important; margin-right:auto !important; }
@@ -221,7 +222,7 @@
 
   /* ---- 03 Acid Lime : BENTO (big first tile, highlighted middle plan) ---- */
   .V-bento .card { border-radius:22px; }
-  @media(min-width:1100px){
+  @media(min-width:861px){
     .V-bento .grid:not(.steps), .V-bento .prog, .V-bento .fac { display:grid; grid-template-columns:repeat(4,1fr); max-width:none; }
     .V-bento .prog, .V-bento .fac { grid-template-columns:repeat(3,1fr); }
     .V-bento .prog .card, .V-bento .fac .card { width:auto !important; }
@@ -238,7 +239,7 @@
   /* ---- 04 Sunset Glow : PILL (round soft cards, centred headings, timeline steps) ---- */
   .V-pill .card { border-radius:32px; border-top:4px solid var(--accent); }
   .V-pill .btn { border-radius:99px; }
-  @media(min-width:1100px){
+  @media(min-width:861px){
     .V-pill section:not(#home) > .tag, .V-pill section:not(#home) > h2, .V-pill section:not(#home) > .lead { align-self:center !important; text-align:center !important; margin-left:auto !important; margin-right:auto !important; }
     .V-pill .steps { grid-template-columns:1fr; max-width:640px; margin-inline:auto; border-left:3px dashed var(--accent); padding-left:30px; }
     .V-pill .steps .card { position:relative; } .V-pill .steps .card::after { content:""; position:absolute; left:-41px; top:30px; width:18px; height:18px; border-radius:50%; background:var(--accent); box-shadow:0 0 18px var(--glow); }
@@ -250,7 +251,7 @@
   .V-editorial .card { background:transparent; border:0; border-bottom:1px solid var(--cardb); border-radius:0; box-shadow:none; backdrop-filter:none; padding:18px 6px; }
   .V-editorial .card:hover { background:var(--soft); box-shadow:none; }
   .V-editorial .planrow .card { border:1px solid var(--cardb); border-radius:14px; background:var(--card); padding:26px; }
-  @media(min-width:1100px){
+  @media(min-width:861px){
     .V-editorial .grid:not(.steps) { grid-template-columns:1fr 1fr; max-width:none; column-gap:56px; }
     .V-editorial .prog .card, .V-editorial .fac .card { width:calc((100% - 56px)/2) !important; } .V-editorial .prog, .V-editorial .fac { column-gap:56px; }
     .V-editorial h2 { font-size:clamp(30px,3.4vw,54px) !important; }
@@ -259,7 +260,7 @@
 
   /* ---- 07 Ice Frost : GLASS (big frosted tiles, 2 columns) ---- */
   .V-glass .card { border-radius:28px; background:linear-gradient(135deg,#ffffff24,#ffffff08); border:1px solid #ffffff38; backdrop-filter:blur(22px) saturate(1.4); padding:30px; }
-  @media(min-width:1100px){
+  @media(min-width:861px){
     .V-glass .grid:not(.steps) { grid-template-columns:1fr 1fr; max-width:none; gap:22px; }
     .V-glass .prog .card, .V-glass .fac .card { width:calc((100% - 22px)/2) !important; } .V-glass .prog, .V-glass .fac { gap:22px; }
     .V-glass .card h3 { font-size:21px; }
@@ -269,7 +270,7 @@
   .V-brutal .card { border-radius:0; border:3px solid var(--fg); box-shadow:7px 7px 0 var(--accent); }
   .V-brutal .card:hover { transform:translate(-3px,-3px); box-shadow:11px 11px 0 var(--accent); }
   .V-brutal .btn { border-radius:0; border-width:3px; } .V-brutal h2 { text-transform:uppercase; }
-  @media(min-width:1100px){
+  @media(min-width:861px){
     .V-brutal h2 { font-size:clamp(40px,5vw,84px) !important; }
     .V-brutal .steps { grid-template-columns:1fr; max-width:760px; }
     .V-brutal .steps .card { display:flex; align-items:center; gap:24px; } .V-brutal .steps .card::before { font-size:64px; }
@@ -278,7 +279,7 @@
 
   /* ---- 09 Synthwave : CENTER 2 (neon outlines, centred, horizontal timeline) ---- */
   .V-center2 .card { background:#ffffff08; border:1px solid var(--accent); box-shadow:0 0 22px var(--glow), inset 0 0 18px #ffffff0d; border-radius:16px; }
-  @media(min-width:1100px){
+  @media(min-width:861px){
     .V-center2 section:not(#home) { align-items:center !important; text-align:center !important; }
     .V-center2 section:not(#home) > .tag { align-self:center !important; }
     .V-center2 section:not(#home) .lead, .V-center2 .grid, .V-center2 .faq, .V-center2 .calc, .V-center2 .moretext, .V-center2 .agrid { margin-left:auto !important; margin-right:auto !important; }
@@ -293,7 +294,7 @@
   .V-stencil .card { border:2px dashed var(--accent); border-radius:6px; }
   .V-stencil section:not(#home) > .tag { border:2px solid var(--accent); padding:4px 12px; display:inline-block; transform:rotate(-2deg); }
   .V-stencil .tag::before, .V-stencil .tag::after { display:none !important; }
-  @media(min-width:1100px){
+  @media(min-width:861px){
     .V-stencil .grid:not(.steps) { grid-template-columns:1fr 1fr; max-width:none; }
     .V-stencil .prog .card, .V-stencil .fac .card { width:calc((100% - 16px)/2) !important; }
     .V-stencil .steps { grid-template-columns:repeat(3,1fr); }
@@ -321,7 +322,7 @@
   .V-pill .prog, .V-pill .fac { flex-wrap:nowrap !important; justify-content:flex-start !important; overflow-x:auto; scroll-snap-type:x mandatory; padding-bottom:16px; max-width:100% !important; }
   .V-pill .prog .card, .V-pill .fac .card { flex:0 0 270px; width:270px !important; scroll-snap-align:start; }
 
-  @media(min-width:1100px){
+  @media(min-width:861px){
     /* 01 split: big photo flush to the content edge, full hero height */
     .V-index .ph-hero { top:0; transform:none; height:100%; width:min(38vw,560px); aspect-ratio:auto; right:var(--tc); }
     .V-index #home:has(.ph-hero) > :not(.ph-hero) { max-width:calc(100% - min(38vw,560px) - 30px) !important; }
@@ -365,31 +366,43 @@
   -webkit-background-clip:text; background-clip:text; animation:shnGo 5.5s ease-in-out infinite; animation-delay:var(--sd,0s); filter:drop-shadow(0 0 6px rgba(255,255,255,.5)); }
 @keyframes shnGo { 0%{--p:var(--a,-200px)} 38%{--p:var(--b,900px)} 100%{--p:var(--b,900px)} }
 @media(prefers-reduced-motion:reduce){ .shn::after{ animation:none; display:none; } }
+
+/* zoomed laptops (861-1099px): keep headline sizes calm so nothing looks too big */
+@media(min-width:861px) and (max-width:1099px){
+  body #home h1, body.V-index #home h1 { font-size:clamp(34px,4.6vw,54px) !important; max-width:100% !important; word-break:normal !important; overflow-wrap:normal !important; line-height:1.08; }
+  body.V-brutal #home h1 { font-size:clamp(40px,6vw,66px) !important; line-height:.98; }
+  body.V-brutal h2, body.V-editorial h2 { font-size:clamp(26px,3.6vw,44px) !important; }
+}
+@media(min-width:861px) and (max-width:1099px){
+  body.V-editorial #home:has(.ph-hero) > :not(.ph-hero) { max-width:calc(100% - 34vw) !important; }
+  body.V-editorial #home h1 { max-width:calc(100% - 34vw) !important; }
+  body.V-glass #home:has(.ph-hero) > :not(.ph-hero) { margin-left:calc(24vw + 8vw) !important; max-width:calc(100% - 24vw - 14vw) !important; }
+}
   :root { --bg:#090503; --bgimg:radial-gradient(1000px 600px at 50% 120%,#5e1b0099,transparent),linear-gradient(#0b0603,#070402); --fg:#fff3e6; --mut:#cdae92; --accent:#ff7a00; --accent2:#ffd000; --onaccent:#1a0b00; --glow:#ff7a0077; --soft:#ff7a0024; --card:rgba(255,122,0,.06); --cardb:rgba(255,122,0,.3); --radius:10px; --btnr:6px; --btnbg:linear-gradient(90deg,#ff4d00,#ff9500); --btnb:rgba(255,122,0,.55); --navbg:linear-gradient(#090503ee,transparent); --stripbg:#0d0703cc; --stripfg:rgba(255,122,0,.3); --footbg:#090503; --footfg:#7a6350; --inbg:#0d0703; --inbr:rgba(255,122,0,.4); --info:#f0dcc8; --line:rgba(255,122,0,.3); --hfont:'Oswald','Arial Narrow',Impact,sans-serif; --hweight:700; --hls:1px; --h1:clamp(56px,10.5vw,160px); --h2:clamp(40px,6.4vw,92px); --grad:linear-gradient(180deg,#ffd000,#ff4d00); --hshadow:0 0 60px #ff4d0066; }
   .card:hover{transform:translateY(-4px)}
 </style>
 </head>
 <body class="L-right t-08 V-brutal">
 <canvas id="bg"></canvas>
-<div class="demobar">DEMO PREVIEW. A sample layout for Fitness Xpress (The Unisex Gym) | Gym in Gorakhpur | Best Gym in Gorakhpur | fitness center | GYM | FXG |. Facilities, timings and prices shown here are placeholders and will be replaced with your real details.</div>
+<div class="demobar">DEMO PREVIEW. A sample layout for Fitness Xpress (The Unisex Gym). Facilities, timings and prices shown here are placeholders and will be replaced with your real details.</div>
 
 <nav>
-  <div class="logo">Fitness Xpress (The Unisex Gym) | Gym in Gorakhpur | Best Gym in Gorakhpur | fitness center | GYM | FXG |</div>
+  <div class="logo">Fitness Xpress (The Unisex Gym)</div>
   <div class="links"><a href="#why">Benefits</a><a href="#programs">Programs</a><a href="#journey">Results</a><a href="#plans">Plans</a><a href="#faq">FAQ</a></div>
   <a class="cta" href="tel:+91 93726 65681">Call Now</a>
 </nav>
 
 <section id="home">
-  <div class="ph fx ph-hero"><img class="bl" src="../../sample/hero.jpg" alt="" aria-hidden="true" loading="lazy"><img class="mn" src="../../sample/hero.jpg" alt="Fitness Xpress (The Unisex Gym) | Gym in Gorakhpur | Best Gym in Gorakhpur | fitness center | GYM | FXG | - Hero" loading="lazy"><span class="cap">Sample photo</span></div>
+  <div class="ph fx ph-hero"><img class="bl" src="../../sample/hero.jpg" alt="" aria-hidden="true" loading="lazy"><img class="mn" src="../../sample/hero.jpg" alt="Fitness Xpress (The Unisex Gym) - Hero" loading="lazy"><span class="cap">Sample photo</span></div>
   <div class="tag">Train Hard. Live Strong.</div>
   <div class="badge">Demo Preview</div>
   <h1>Forge Your <span>Strongest</span> Self</h1>
-  <p class="lead">Train hard, stay consistent and get stronger. Welcome to Fitness Xpress (The Unisex Gym) | Gym in Gorakhpur | Best Gym in Gorakhpur | fitness center | GYM | FXG |, Mahuaa Tiraha, Gorakhpur Rd, near rotary school durga mandir ,Shivpur Sahbajgang, Padri Bazar, Gorakhpur, Uttar Pradesh 273014.</p>
+  <p class="lead">Train hard, stay consistent and get stronger. Welcome to Fitness Xpress (The Unisex Gym), Mahuaa Tiraha, Gorakhpur Rd, near rotary school durga mandir ,Shivpur Sahbajgang, Padri Bazar, Gorakhpur, Uttar Pradesh 273014.</p>
   <div class="btns"><a class="btn primary" href="tel:+91 93726 65681">Book Free Trial</a><a class="btn" href="#why">See What You Get</a></div>
 </section>
 
 <div class="strip"><div><span>Strength <b>✦</b> Cardio <b>✦</b> Fat Loss <b>✦</b> Muscle <b>✦</b> Flexibility <b>✦</b> Discipline <b>✦</b></span><span>Strength <b>✦</b> Cardio <b>✦</b> Fat Loss <b>✦</b> Muscle <b>✦</b> Flexibility <b>✦</b> Discipline <b>✦</b></span></div></div>
-<div class="ph-band"><div class="ph fx"><img class="bl" src="../../sample/inside.jpg" alt="" aria-hidden="true" loading="lazy"><img class="mn" src="../../sample/inside.jpg" alt="Fitness Xpress (The Unisex Gym) | Gym in Gorakhpur | Best Gym in Gorakhpur | fitness center | GYM | FXG | - Inside, workout floor" loading="lazy"><span class="cap">Sample photo</span></div></div>
+<div class="ph-band"><div class="ph fx"><img class="bl" src="../../sample/inside.jpg" alt="" aria-hidden="true" loading="lazy"><img class="mn" src="../../sample/inside.jpg" alt="Fitness Xpress (The Unisex Gym) - Inside, workout floor" loading="lazy"><span class="cap">Sample photo</span></div></div>
 
 <section id="why" class="right">
   <div class="tag rv">Why Hit The Gym</div>
@@ -438,7 +451,7 @@
   <h2 class="rv">What To <span>Expect</span></h2>
   <p class="lead rv">Typical progress for someone who trains consistently and eats well. Everyone is different.</p>
   <div class="split">
-  <div class="ph ph-trainer"><img src="../../sample/trainer.jpg" alt="Fitness Xpress (The Unisex Gym) | Gym in Gorakhpur | Best Gym in Gorakhpur | fitness center | GYM | FXG | - Trainer or team" loading="lazy"><span class="cap">Sample photo</span></div>
+  <div class="ph ph-trainer"><img src="../../sample/trainer.jpg" alt="Fitness Xpress (The Unisex Gym) - Trainer or team" loading="lazy"><span class="cap">Sample photo</span></div>
   <div class="time">
     <div class="rv"><b>WEEK 1–2</b><p>Body adapts, form improves, soreness fades. You start building the habit.</p></div>
     <div class="rv"><b>WEEK 4</b><p>Energy and sleep improve. Weights feel lighter and clothes fit differently.</p></div>
@@ -452,7 +465,7 @@
   <div class="tag rv">Facilities</div>
   <h2 class="rv">Everything <span>You Need</span></h2>
   <p class="lead rv">Ask us about our complete facilities.</p>
-  <div class="ph fx ph-mach"><img class="bl" src="../../sample/machines.jpg" alt="" aria-hidden="true" loading="lazy"><img class="mn" src="../../sample/machines.jpg" alt="Fitness Xpress (The Unisex Gym) | Gym in Gorakhpur | Best Gym in Gorakhpur | fitness center | GYM | FXG | - Machines and weights" loading="lazy"><span class="cap">Sample photo</span></div>
+  <div class="ph fx ph-mach"><img class="bl" src="../../sample/machines.jpg" alt="" aria-hidden="true" loading="lazy"><img class="mn" src="../../sample/machines.jpg" alt="Fitness Xpress (The Unisex Gym) - Machines and weights" loading="lazy"><span class="cap">Sample photo</span></div>
   <div class="grid fac fac-6">
     <div class="card rv"><div class="ic">🏗️</div><h3>Free Weights</h3><p>Dumbbells and barbells to build strength.</p></div>
     <div class="card rv"><div class="ic">⚙️</div><h3>Machines</h3><p>Guided strength machines for safe, targeted work.</p></div>
@@ -476,7 +489,7 @@
 </section>
 
 <section id="plans" class="right plans">
-  <div class="ph-pol"><div class="in"><div class="ph"><img src="../../sample/extra.jpg" alt="Fitness Xpress (The Unisex Gym) | Gym in Gorakhpur | Best Gym in Gorakhpur | fitness center | GYM | FXG | - Extra" loading="lazy"><span class="cap">Sample photo</span></div></div><div class="cap2">Our space</div></div>
+  <div class="ph-pol"><div class="in"><div class="ph"><img src="../../sample/extra.jpg" alt="Fitness Xpress (The Unisex Gym) - Extra" loading="lazy"><span class="cap">Sample photo</span></div></div><div class="cap2">Our space</div></div>
   <div class="tag rv">Membership</div>
   <h2 class="rv">Choose Your <span>Plan</span></h2>
   <p class="lead rv">Choose the membership that suits you. Call us for the latest offers.</p>
@@ -520,13 +533,13 @@
   <div class="tag rv">Join Today</div>
   <h2 class="rv">Your First Rep <span>Starts Here</span></h2>
   <div class="cwrap">
-  <div class="info rv"><b>Gym:</b> Fitness Xpress (The Unisex Gym) | Gym in Gorakhpur | Best Gym in Gorakhpur | fitness center | GYM | FXG |<br><b>Address:</b> Mahuaa Tiraha, Gorakhpur Rd, near rotary school durga mandir ,Shivpur Sahbajgang, Padri Bazar, Gorakhpur, Uttar Pradesh 273014<br><b>Timing:</b><br>Call us for timings<br><b>Call:</b> <a href="tel:+91 93726 65681" style="color:inherit;font-weight:700;text-decoration:underline">+91 93726 65681</a></div>
-  <div class="ph fx ph-front"><img class="bl" src="../../sample/front.jpg" alt="" aria-hidden="true" loading="lazy"><img class="mn" src="../../sample/front.jpg" alt="Fitness Xpress (The Unisex Gym) | Gym in Gorakhpur | Best Gym in Gorakhpur | fitness center | GYM | FXG | - Front, entrance" loading="lazy"><span class="cap">Sample photo</span></div>
+  <div class="info rv"><b>Gym:</b> Fitness Xpress (The Unisex Gym)<br><b>Address:</b> Mahuaa Tiraha, Gorakhpur Rd, near rotary school durga mandir ,Shivpur Sahbajgang, Padri Bazar, Gorakhpur, Uttar Pradesh 273014<br><b>Timing:</b><br>Call us for timings<br><b>Call:</b> <a href="tel:+91 93726 65681" style="color:inherit;font-weight:700;text-decoration:underline">+91 93726 65681</a></div>
+  <div class="ph fx ph-front"><img class="bl" src="../../sample/front.jpg" alt="" aria-hidden="true" loading="lazy"><img class="mn" src="../../sample/front.jpg" alt="Fitness Xpress (The Unisex Gym) - Front, entrance" loading="lazy"><span class="cap">Sample photo</span></div>
   </div>
-  <div class="btns rv"><a class="btn primary" href="tel:+91 93726 65681">Call &amp; Book Free Trial</a><a class="btn" href="https://wa.me/919372665681">WhatsApp Us</a><a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Fitness%20Xpress%20%28The%20Unisex%20Gym%29%20%7C%20Gym%20in%20Gorakhpur%20%7C%20Best%20Gym%20in%20Gorakhpur%20%7C%20fitness%20center%20%7C%20GYM%20%7C%20FXG%20%7C%20Mahuaa%20Tiraha%2C%20Gorakhpur%20Rd%2C%20near%20rotary%20school%20durga%20mandir%20%2CShivpur%20Sahbajgang%2C%20Padri%20Bazar%2C%20Gorakhpur%2C%20Uttar%20Pradesh%20273014">Get Directions</a></div>
+  <div class="btns rv"><a class="btn primary" href="tel:+91 93726 65681">Call &amp; Book Free Trial</a><a class="btn" href="https://wa.me/919372665681">WhatsApp Us</a><a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Fitness%20Xpress%20%28The%20Unisex%20Gym%29%20Mahuaa%20Tiraha%2C%20Gorakhpur%20Rd%2C%20near%20rotary%20school%20durga%20mandir%20%2CShivpur%20Sahbajgang%2C%20Padri%20Bazar%2C%20Gorakhpur%2C%20Uttar%20Pradesh%20273014">Get Directions</a></div>
 </section>
 
-<footer>&copy; Fitness Xpress (The Unisex Gym) | Gym in Gorakhpur | Best Gym in Gorakhpur | fitness center | GYM | FXG |. Train hard.</footer>
+<footer>&copy; Fitness Xpress (The Unisex Gym). Train hard.</footer>
 
 <script>
 function bmi(){
